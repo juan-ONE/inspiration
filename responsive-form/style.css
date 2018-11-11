@@ -1,0 +1,75 @@
+body {
+    background-color: #efefef;
+      text-align: center;
+      font-size: 1.4em
+  }
+  #form-outer {
+    background-color: #a9d7d1;
+    width: 95%;
+    margin: 0px auto;
+    padding: 6px;
+  }
+  .label {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    vertical-align: top;
+    padding: 6px;
+    margin-top: 10px;
+  }
+  .rightTab {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .input-field {
+    height: 20px;
+    width: 40%;
+    padding: 4px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+  }
+  .select-buttons {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+  }
+  .rightTab > ul {
+    margin-left: -35px;
+  }
+  .comments {
+    height: 60px;
+  }
+  #submit {
+    background-color: #59ace0;
+    color: white;
+    border-radius: 6px;
+    border: 0px;
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .input-field {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .label {
+      width: 100%;
+      text-align: left;
+    }
+    .rigthTab {
+      width: 80%;
+    }
+    .input-field {
+      width: 100%;
+    }
+  }

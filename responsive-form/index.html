@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div id="form-outer">
+		<p id="description">
+			Let us know why you join RestartNetwork
+		</p>
+		<form id="survey-form" method="get" action="#">
+			<div class="item">
+				<div class="label">
+					<label id="name-label" for="name">* Name: </label>
+				</div>
+				<div class="rightTab">
+					<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+				</div>
+			</div>
+			<div class="item">
+				<div class='label'>
+					<label id="email-label" for="email">* Email: </label>
+				</div>
+				<div class="rightTab">
+					<input type="text" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+				</div>
+			</div>
+			<div class="item">
+				<div class='label'>
+					<label id="number-label" for="age">* Age: </label>
+				</div>
+				<div class="rightTab">
+					<input type="number" name="age" id="number" min="18" max="100" class="input-field" placeholder="Enter your age"
+					 required>
+				</div>
+			</div>
+			<div class="item">
+				<div class='label'>
+					<label id="gender-label" for="gender">* Gender: </label>
+				</div>
+				<div class="rightTab">
+					<select name="gender" class="select-buttons" id="dropdown">
+						<option disabled value>Gender</option>
+						<option value="female">Female</option>
+						<option value="male">Male</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+			</div>
+			<div class="item">
+				<div class='label'>
+					<label id="education-label" for="education">Education:</label>
+				</div>
+				<div class="rightTab">
+					<input type="text" name="education" id="education" class="input-field">
+				</div>
+			</div>
+			<div class="item">
+				<div class='label'>
+					<label id="motivation-label" for="motivation">Motivation:</label>
+				</div>
+				<div class="rightTab">
+					<input type="text" name="motivation" id="motivation" class="input-field" required>
+				</div>
+			</div>
+			<!--   check box -->
+			<div class="item">
+				<div class='label'>
+					<label for="skills">* What skills you will gain from this BootCamp?</label>
+				</div>
+				<div class="rightTab">
+					<ul id="skills" style="list-style: none;">
+						<li>
+							<label><input type="checkbox" value="html" name="skill">HTML</label></li>
+						<li>
+							<label><input type="checkbox" value="css" name="skill">CSS</label></li>
+						<li>
+							<label><input type="checkbox" value="javascript" name="skill">JavaScript</label></li>
+						<li>
+							<label><input type="checkbox" value="php" name="skill">PHP</label></li>
+					</ul>
+				</div>
+			</div>
+
+			<!--   radio button -->
+			<div class="item">
+				<div class='label'>
+					<label for="likes">* How much do you enjoy this BootCamp ?</label>
+				</div>
+				<div class="rightTab">
+					<ul id="likes" style="list-style: none;">
+						<li>
+							<label><input type="radio" value="1" name="enjoyBootcamp">Very much</label></li>
+						<li>
+							<label><input type="radio" value="2" name="enjoyBootcamp">Some</label></li>
+						<li>
+							<label><input type="radio" value="3" name="enjoyBootcamp">A little</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class='label'>
+					<label for="comments">Leave your comments?</label>
+				</div>
+				<div class="rightTab">
+					<textarea id="comments" name="comment" placeholder="Enter your comment here ..." class="input-field comments"></textarea>
+				</div>
+			</div>
+
+			<button id="submit" type="submit">Submit</button>
+
+		</form>
+	</div>
+</body>
+
+</html>
